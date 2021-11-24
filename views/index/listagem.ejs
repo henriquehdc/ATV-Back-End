@@ -1,0 +1,31 @@
+<h1>
+	Lista de livros cadastrados
+</h1>
+
+<% for (let i = 0; i < livro.length; i++) { %>
+<div>
+
+	<h3>
+		<%= livro[i].titulo %>
+	</h3>
+
+    <p>
+	    ID:	<%= livro[i].id %>
+	</p>
+
+	<p>
+		Ano: <%= livro[i].ano %>
+	</p>
+
+	<p>
+		Autor: <%= livro[i].autor %>
+	</p>
+
+    <p>
+		Páginas: <%= livro[i].paginas %>
+	</p>
+
+	<hr />
+
+</div>
+<% } %>
